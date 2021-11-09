@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Mednear</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+
+<body>
+    <header id="header" class="hedbar">
+        <div class="container">
+            <div class="navbar">
+                <a class="brandLogo" href="home.html">
+                    <img class="brandLogoNormal" src="https://mednear.com/assets/web/images/logo-big.svg" alt="MedNear"
+                        title="MedNear">
+                    <img class="brandLogoIcon" src="https://mednear.com/assets/web/images/logo-icon.svg" alt="MedNear"
+                        title="MedNear">
+                </a>
+                <div class="search">
+                    <div class="main-search-box">
+                        <input type="text" placeholder="Search for your Medicines / Helth Products">
+                    </div>
+                    <div class="serch-btn">
+                        <button id="sbutton"><img style="width: 30px; height: 34px;"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_XB5QFpvtAyfg_9tobnnnXoAiWKWZXPT9w&usqp=CAU"
+                                alt=""></button>
+                    </div>
+                </div>
+                <div class="upload-section">
+                    <a class="uplode-file" href="uplodefile">
+                        <span class="icon-doc">
+                            <img style="height: 100%;"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbysyWLdOPyXfW2r9a7-_dRGtls17mFYxsAA&usqp=CAU"
+                                alt="">
+                        </span>
+                        <span id="b">
+                            <b>Quick Order</b><br>
+                            <b>Upload Prescription</b>
+                        </span>
+                    </a>
+                </div>
+                <div class="iconic-nav">
+                    <ul>
+                        <li>
+                            <a href="loginPage.html" class="signUp">
+                                <div class="menu-icon">
+                                    <img style="width: 30px;height: 30px;"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE7pFKhkdDUw2y5itWf4EJZAZPMaWzO3Owpw&usqp=CAU"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <span>Login / Signup</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div id="cart-icon"><a href="cart"><img style="width: 30px; height: 28px;"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtsA4eLP6Vxtbc7kteXu6k8CP6StBMG_wA&usqp=CAU"
+                                        alt=""></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sign-container">
+        <div class="sign-container-div">
+            <div id="sign-img">
+                <img style="width: 100%;height: 100%;"
+                    src="https://mednear.com/assets/web/images/others/mn-register-banner.jpg" alt="">
+            </div>
+        </div>
+        <div class="sign-container-div">
+            <div id="sign-form-div">
+                <form action="">
+                    <h4>Sign Up</h4>
+                    <p>Signup now & refer to get Rs.50 MNCASH. We don’t share your personal details with anyone.</p>
+                    <input class="linp" id="user" type="text" placeholder="Name"><br><br>
+                    <input class="linp" id="mobile" type="number" placeholder="Mobile Number"><br><br>
+                    <input class="linp" id="email" type="email" placeholder="Email Address (Optional)"><br><br>
+                    <input class="linp" id="pass" type="password" placeholder="Set Password"><br><br>
+                    <input class="linp" type="password" placeholder="Confirm Password"><br><br>
+                    <p>By signing up, you agree to our <a href="terms and condition">Terms and Conditions</a></p>
+                    <button class="loginb"id="signbutton">SIGNUP</button>
+                    <p>Existing User?<a href="loginpage.html">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("signbutton").addEventListener("click", signUp);
+    var userArr = JSON.parse(localStorage.getItem("userData")) || [];
+    function signUp() {
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        var user = document.getElementById("user").value;
+        var mobile = document.getElementById("mobile").value;
+
+        var userCredentials = {
+            emailAddress: email,
+            passWord: pass,
+            userName: user,
+            mobileNo: mobile,
+        };
+        userArr.push(userCredentials);
+        localStorage.setItem("userData", JSON.stringify(userArr));
+
+        window.location.href = "loginpage.html";
+    }
+</script>
