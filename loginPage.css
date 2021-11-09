@@ -1,0 +1,89 @@
+#container-loginform{
+            
+    width: 80%;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 130px;
+}
+.loginform-div{
+    width: 50%;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3px;
+}
+#img-div{
+    width: 80%;
+    height: 80%;
+    
+    margin: auto;
+    margin-top: 8%;
+    
+}
+#loginform{
+    width: 70%;
+    height: 70%;
+    line-height: 70%;
+    margin: auto;
+    margin-top: 8%;
+}
+h4{
+    color: #189ea3;
+}
+p{
+    font-size: 12px;
+    display: inline-block;
+}
+.linp{
+    width: 95%;
+    height: 25px;
+    border-radius: 3px;
+    border:1px solid #c0c0c0;
+}
+
+#cp{
+   transform: translateY(-2px);
+}
+.loginb{
+    width: 98%;
+    height: 28px;
+    text-align: center;
+    color: white;
+    background-color: #189ea3;
+    border-radius: 3px;
+    border: none;
+}
+#loginb:hover{
+    background-color: #0d828d;
+}
+
+/* css of signpage */
+
+.sign-container {
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sign-container-div {
+    width: 50%;
+    
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3px;
+}
+
+#sign-img {
+    width: 80%;
+    margin: auto;
+}
+#sign-form-div{
+    width: 70%;
+    margin: auto;
+    line-height: 80%;
+}
