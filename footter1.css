@@ -1,0 +1,178 @@
+ /* *{
+            margin: 0px;
+            padding: 0px;
+        } */
+        #fcontainer{
+            display: flex;
+            width: 100%;
+            /* height: 450px; */
+        }
+        #fcontainer>div{
+            margin: 50px;
+        }
+        #heading{
+            font-size: 35px;
+            width: 90%;
+            color: #189EA3;
+        }
+        #para{
+            font-size: 18px;
+            line-height: 35px;
+        }
+        img{
+            /* height: 100%; */
+            width: 100%;
+
+        }
+        #text{
+            width: 65%;
+        }
+        #boxes{
+            /* display: flex;
+            width: 100%;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 0px; */
+
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+        #boxes>div{
+            border: 1px solid gray;
+            padding: 0px 20px;
+        }
+        /* #boxes>div:nth-child(1){
+            margin-left: 100px;
+        } */
+        .display{
+            display: flex;
+        }
+
+        .display>div{
+            margin: 50px 100px;
+        }
+        text> h2,h3,p{
+                text-align: center;
+                justify-content: center;
+        }
+        input{
+            margin-left: 90px;
+            /* margin-top: 30px; */
+            margin-right: 0px;
+            width:300px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            background-color: #189EA3;
+            border: none;
+            margin: 0px;
+            border-radius: 4px;
+           
+        }
+        .text>a>img{
+            width: 20%;
+            height: 30%;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+        #heart{
+            height: 300px;
+            background-color: #189EA3;
+        }
+        #lastBoxes>div{
+                width: 25%;
+                height: 200px;
+                margin: 0px;
+                border: 1px solid gray;
+        }
+        #heart>img{
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 60%;
+            height: 40%;
+        }
+      #view:hover{
+            background-color: #189EA3;
+            color: white;
+       }
+       #heart~div{
+           padding-left: 40px;
+       }
+       #heart~div>button{
+        font-size: 18px; color: #189EA3; background-color: white; border:1px solid #189EA3; margin-left:100px;
+       }
+       #heart~div>p{
+           text-align: left;
+       }
+       #playStore{
+           width: 20%;
+           height: 10%;
+
+       }
+       #getApp{
+           color: white;
+       }
+       #getApp:hover{
+           background-color: gray;
+       }
+
+       @media (max-width:750px){
+        #fcontainer{
+            flex-direction: column;
+        }
+        #boxes{
+            /* display: flex;
+            width: 100%;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 0px; */
+
+            grid-template-columns: auto auto ;
+            grid-template-rows: auto auto;
+            margin: auto;
+            padding: 0px 50px;
+          
+        }
+        .display{
+            flex-direction: column;
+        }
+        input{
+            margin-left: 0px;
+           
+        }
+            #playStore {
+        width: 90%;
+        height: 10%;
+        margin-left: 50px;
+    }
+
+    #lastBoxes>div {
+    width: auto;
+    /* height: 200
+px
+;
+    margin: 0
+px
+;
+    border: 1
+px
+ solid gray; */
+}
+#heading {
+    font-size: 18px;
+    /* width: 90%; */
+    color: #189EA3;
+}
+#para {
+    font-size: 16px;
+    line-height: 16px;
+}
+       }
