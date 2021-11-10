@@ -1,0 +1,105 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#Home{
+margin-left: 90%;
+margin-top: 20px;
+color: #189ea3;
+border-radius: 20px;
+width: 100px;
+height: 40px;
+}
+.container{
+    width: 15% ;
+    background-color: white;
+    /* background: whitesmoke; */
+    padding-left: 10px;
+    /* box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75); */
+
+    padding-bottom: 30px;
+    grid-template-columns: 130px,120px,120px,120px;
+    
+    margin: 10px;
+    padding-top: 20px;
+   
+    margin-left: 40px;
+    display:inline-block;
+    align-items:auto;
+    
+    
+}
+
+.image img{
+   width:200px;
+   height: 200px;
+   padding-top: 20px;
+   
+   
+}
+.kit{
+    color: gray;
+}
+
+#cart{
+   margin-left: 100px;
+   width: 100px;
+   height: 40px;
+   background-color: #189ea3;
+   color: white;
+}
+
+.payment{
+    padding-top: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+ .payicon{
+    
+    padding-left: 25%;
+ }
+ #brand{
+    padding-left: 48%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+ #company{
+     text-align: center;
+     font-size: 18px;
+     font-family: Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+ }
+ #Onlinemedicine{
+     padding-left: 40%;
+     margin-top: 20px;
+ }
+
+ .Medicineshopping{
+     padding-top: 10px;
+     text-align: center;
+     font-size: 17px;
+     margin-bottom: 10px;
+     font-family:  Helvetica Neue",Helvetica,Arial,sans-serif;
+     
+ }
+
+     #Mednear{
+        padding-left: 18%;
+        margin-top: 20px;  
+     }
+    
+ .hiring{
+     padding-left: 10%;
+     padding-bottom: 20px;
+     margin-top: 20px;
+     display: inline-block;
+     
+ }
+ #bottom{
+   text-align: center; 
+   font-size: 16px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }

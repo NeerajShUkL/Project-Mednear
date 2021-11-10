@@ -1,0 +1,97 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+  
+#main{
+    background-color: whitesmoke;
+}
+
+
+
+#container{
+   
+    width: 86%;
+    margin: auto;
+    height: 600px;
+    background-color: #ffffff;
+   
+}
+
+#join{
+    padding: 10px;
+    color:#189ea3 ;
+}
+
+#text{
+    
+    margin-left: 10px;
+}
+p{
+    font-family:serif;
+}
+
+.boxopening{
+    border: 1px solid black;
+    width: 400px;
+    text-align: center;
+}
+
+
+
+.payment{
+    padding-top: 40px; 
+     margin-top: 40px;
+    text-align: center;
+}
+ .payicon{
+    
+    padding-left: 25%;
+ }
+ #brand{
+    padding-left: 48%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+ #company{
+     text-align: center;
+     font-size: 18px;
+     font-family: Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+ }
+ #Onlinemedicine{
+     padding-left: 40%;
+     margin-top: 20px;
+ }
+
+ .Medicineshopping{
+     padding-top: 10px;
+     text-align: center;
+     font-size: 17px;
+     margin-bottom: 10px;
+     font-family:  Helvetica Neue",Helvetica,Arial,sans-serif;
+     
+ }
+
+     #Mednear{
+        padding-left: 18%;
+        margin-top: 20px;  
+     }
+    
+ .hiring{
+     padding-left: 10%;
+     padding-bottom: 20px;
+     margin-top: 20px;
+     display: inline-block;
+     
+ }
+ #bottom{
+   text-align: center; 
+   font-size: 16px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+ }
+
+ #container1{
+     background-color: white;
+ }
