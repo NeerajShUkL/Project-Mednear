@@ -94,9 +94,9 @@
 
 #app-img-div {
     width: 20%;
-    height: 100%;
+    height: 80%;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 20px;
 
 
 }
@@ -147,9 +147,11 @@
 
 #ha-heart-img {
     background-color: #189ea3;
+    height: 100%;
 }
 #ha-img-logo{
     width: 33%;
+    height: 50%;
     margin: auto;
     margin-top: 4%;
 }
