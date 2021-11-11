@@ -52,11 +52,11 @@
 
 <div class = "card" >
 <lable >Card Number</lable>
-<input  type = "number" placeholder="Enter your card Number"/>
+<input class = "cardNumber"  type = "number" placeholder="Enter your card Number"/>
 <lable>Card Expiry Date</lable>
 <input type = "text" placeholder="MM/YY"/>
 <lable>CVV</lable>
-<input type = "number" placeholder = "Enter your cvv"/>
+<input type = "password" placeholder = "Enter your cvv"/>
 <button class = "pay" onclick="pay()">Pay</button>
 </div>
 
@@ -70,17 +70,17 @@
 
 <div class = "card" >
     <lable >Card Number</lable>
-    <input  id = "cardNumber" type = "number" placeholder="Enter your card Number"/>
+    <input  class = "cardNumber" type = "number" placeholder="Enter your card Number"/>
     <lable>Card Expiry Date</lable>
     <input type = "text" placeholder="MM/YY"/>
     <lable>CVV</lable>
-    <input type = "number" placeholder = "Enter your cvv"/>
+    <input type = "password" placeholder = "Enter your cvv"/>
     <button class = "pay" onclick="pay()">Pay</button>
     </div>
     
     <div class = "radio">
         <input type = "radio"  name = "radio1"/>
-        <h5>UPI   <input type = "text"/ placeholder="yourUPIhandle@bankname"></h5>
+        <h5> UPI   <input type = "text"/ placeholder="yourUPIhandle@bankname"></h5>
         <button class = "pay" onclick="pay()">Pay</button>
     </div>
     <div>
@@ -102,7 +102,12 @@
 function popup(){
     swal("Cancle Payment?", {
   buttons: ["No", "Yes"],
-});   
+
+  
+
+});
+
+
 }
 
  function select(){
@@ -112,19 +117,27 @@ function popup(){
 
 
 function pay(){
+    
+
+    a = document.querySelector(".cardNumber").value;
+ if(a.length < 16){
+     alert("Your card Number is Not Valid.");
+
+ 
+ 
+
+
+ }else{
     swal("Payment Succesful", "You will get your Delivery Date on your mobile Number");
+ }
+
 
 }
 
 
 
 
-a = document.getElementById("cardNumber").value;
- if(a > 16){
-     alert();
 
-
- }
 
 
 
