@@ -1,0 +1,425 @@
+<html>
+    <head>
+
+        <title></title>
+
+        <style>
+
+            body {
+                background-color: rgb(235, 229, 229);
+            }
+
+            p {
+                margin-left: 3.2rem;
+                margin-top: 5rem;
+            }
+
+            span:hover {
+                color: teal;
+                cursor: pointer;
+            }
+
+            .div {
+                width: 100%;
+                height: 1800px;
+                display: flex;
+                flex-flow: row;
+                gap: 1.5rem;
+                justify-content: center;
+            }
+
+            .wrapper {
+                display: flex;
+                gap: 1.5rem;
+                flex-flow: column;
+            }
+
+            .child-div {
+                height: 260px;
+                width: 235px;
+                background-color: white;
+                display: flex;
+                flex-flow: column;
+            }
+
+            .child-div:hover {
+               box-shadow: 0 7px 17px 0 rgb(23 84 116 / 18%);
+            }
+
+            .button {
+                width: 55px;
+                height: 35px;
+                background-color: white;
+                border-radius: 4px;
+                border: 1px solid teal;
+                color: teal;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .img {
+                width: 110px;
+                height: 190px;
+                margin: auto;
+                cursor: pointer;
+            }
+
+            .subtitle {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            .subtitle:hover{
+                color: teal;
+                cursor: pointer;
+            }
+
+            .subtext {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 12px;
+                color: gray;
+            }
+            .price {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                
+            }
+            .lprice {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                margin-bottom: 5px;
+                font-size: 11px;
+                color: gray;
+                text-decoration-line: line-through;
+            }
+
+            .lastbutton {
+                width: 90px;
+                height: 55px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+            .lastbutton:hover {
+                cursor: pointer;
+                background-color: teal;
+            }
+            hr {
+                color: gray;
+                width: 1267px;
+            }
+
+            .firstbutton {
+                width: div45px;
+                height: 55firstbuttonpx;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+            .secondbutton {
+                width: 45px;
+                height: 55px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <p><b><span> Home</span> /<span> Categories</span></b> / Homeopathy </p>  
+        <hr>
+    </body>
+
+</html>
+
+
+<script> 
+    var arr = [
+        {
+            image_url: "https://mednear.com/uploads/medicine/0c9b1dbfaeb21f9f0d8305888de0c5b6.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL GELSEMIUM SEMPERVIRENS",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.94.80",
+            lprice: "Rs.10  0.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/0c9b1dbfaeb21f9f0d8305888de0c5b6.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.88.80",
+            lprice: "Rs.70.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/68eb125f9391bbd6cd7b92d3250e559f.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL GLONOINUM DILUTION 1000",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.128.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.108.80",
+            lprice: "Rs.90.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/0494c1a642c722b5efbf1c6baf49110f.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/22ed82733462a3f0ebb849b95f309c03.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/0494c1a642c722b5efbf1c6baf49110f.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/22ed82733462a3f0ebb849b95f309c03.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/0494c1a642c722b5efbf1c6baf49110f.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/22ed82733462a3f0ebb849b95f309c03.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "SBL FORMICA RUFA DILUTION…",
+            subtext: "bottle of 30 ml Dilution",
+            price: "Rs.118.80",
+            lprice: "Rs.120.00"
+        }
+    ]
+    let count = 0;
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+    for(let i = 0; i < 5; i++) {
+        const wrapper = document.createElement("div");
+        wrapper.setAttribute("class", "wrapper");
+        for(let index = 0; index < 4; index++) {
+            const childDiv = document.createElement("div");
+            childDiv.setAttribute("class", "child-div");
+            let button = document.createElement("button");
+            button.setAttribute("class", "button");
+            button.innerText = "1% Off";
+            
+            childDiv.appendChild(button);
+            wrapper.appendChild(childDiv);
+
+            let img = document.createElement("img");
+            img.setAttribute("class", "img");
+            img.setAttribute("src", arr[count].image_url);
+            img.setAttribute("title", arr[count].title);
+            childDiv.append(img);
+
+            let subtitle = document.createElement("p");
+            subtitle.setAttribute("class", "subtitle");
+            subtitle.innerText = arr[count].subtitle;
+            childDiv.append(subtitle);
+
+            let subtext = document.createElement("p");
+            subtext.setAttribute("class", "subtext");
+            subtext.innerText = arr[count].subtext;
+            childDiv.append(subtext);
+
+            let price = document.createElement("p");
+            price.setAttribute("class", "price");
+            price.innerText = arr[count].price;
+            childDiv.append(price);
+
+            let lprice = document.createElement("p");
+            lprice.setAttribute("class", "lprice");
+            lprice.innerText = arr[count].lprice;
+            childDiv.append(lprice);
+
+            count++;
+
+
+            let lastbutton = document.createElement("button");
+            lastbutton.setAttribute("class", "lastbutton");
+            lastbutton.innerText = "Add To Cart";
+            childDiv.append(lastbutton);
+        }
+        div.appendChild(wrapper);
+    }
+
+    body.append(div);
+    document.querySelector("img").addEventListener("click", function () {
+        window.location.href = "product.html";
+    })
+    document.querySelector(".subtitle").addEventListener("click", function () {
+        window.location.href = "product.html";
+    })
+    document.querySelector(".lastbutton").addEventListener("click", function () {
+        var firstbutton = document.createElement("button");
+
+        firstbutton.setAttribute("class", "firstbutton")
+        firstbutton.innerText = "1";
+        childDiv.append(firstbutton);
+        var secondbutton = document.createElement("button")
+        secondbutton.setAttribute("class", "secondbutton")
+        secondbutton.innerText = "2";
+        childDiv.append(secondbutton);
+    })
+
+
+</script>

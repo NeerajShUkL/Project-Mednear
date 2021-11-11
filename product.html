@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            body {
+                background-color: rgb(235, 229, 229);
+            }
+
+            .div {
+                width: 1000px;
+                height: 1800px;
+                display: flex; 
+                flex-flow: row;
+                gap: 15rem;
+                justify-content: center;
+            }
+
+            .childDiv {
+                width: 100%;
+                height: 100%;
+            }
+
+            .childDivs {
+                width: 250px;
+                height: 300px;
+            }
+
+            .img {
+                width: 110px;
+                height: 190px;
+                margin: auto;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>
+<script>
+
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+
+
+    let childDivs = document.createElement("div");
+    childDivs.setAttribute("class", childDivs);
+    childDivs.innerText = "SBL FORMICA RUFA DILUTION 1000 CH";
+    div.append(childDivs);
+
+    let childDiv = document.createElement("div");
+    childDiv.setAttribute("class", childDivs);
+    let img = document.createElement("img");
+    img.setAttribute("class", "img");
+    img.setAttribute("src", "https://mednear.com/uploads/medicine/0c9b1dbfaeb21f9f0d8305888de0c5b6.jpg");
+    img.setAttribute("title", "SBL FORMICA RUFA DILUTION 1000 CH");
+    childDiv.append(img);
+    div.append(childDiv);
+
+    body.append(div);
+
+
+</script>
