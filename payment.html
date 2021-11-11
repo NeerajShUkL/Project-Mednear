@@ -7,6 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="payment.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+   
 </head>
 <body>
     <div id = "payment">
@@ -17,7 +22,7 @@
   
    <br>
    <div id = "box1">
-   <button onclick ="popup()"  > < GO Back </button>
+   <button onclick ="popup()"   > < GO Back </button>
    <hr>
    <h3>Mednear Pharma India Private Limited Order</h3>
    
@@ -37,46 +42,46 @@
    <img style="width: 100px;padding-left: 70%;" src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQAAAABVr4M4AAAEr0lEQVR42u2dPXLjMAyFoXGR0kfQUXw0+2g6io+Q0oXHWBJ4DySzO9ukE6BiV4n4KQ2G+OEDJPqLSx7iV7t/Xl+X9t9Ddn/2uPV/PyL39sh/I3K139h1KTgLjBWqh8jX296i39LeItIevS4Gt9/IpnLva2yx9kcFp4GfzVbaz916uNQYszC7ma9vg31xwfngXV9uWM9mRlz63mz38etuW1XBeeFbe9CdVnuLbzrukPi6vkP1NaoF54Phq4zpAY0eU0Bjr2turL23+yoF/NPRFXxumFGvWViY2v9v/gqZCz41HJGK7SyCqBebDqPebnNv35iuc/5ccA7YfBXyZ4tj2v1uMK5NPbX2gMajXryl4CRwT5ttBeMYnWxuV2csbTbv5ZGN2VzzVQVngXdmy0+Pce/d1N6bxn40Mmr/S8LFBSeCldbj+9Gxo5KCqNd9lV0HfdUhBeeBvbbycV+F1MhXDM90D1917Ix1ngXngbs9OdNz4yW0tRMgj2x4c/PDIdhcwVlgRYzSj3nUirO3kSzhmOeI8NdPgJBIF5wEtgrse9M17WHa/I1Krk5WyPRJCs4Ee3HN3iJYKjQ1vBeCg/BVpkUoOAlsqRHT5tfqtG5hc74Gf8AEB2ZhBSeBJ+lAVFs0ZEmRSAvy5yjuNzdWcBoYgawHNIKTPyTS081cf4GYqeA08LQU11OYNsPCDopRjp1OS2CeBWeAe0nF3Y9EZAMzkoh6oWF6xOmgVesKzgKr7z4o3PN0cKioVYdkttscr6sWnAY+oF1jthw50tAnRY40jA++quAcMOv1lBforKuWUNjLHOJ4AVcLzgLDwmBGIqGidjMSVHLRzyPR2ANHV3AC2MxotadwWtRV83Aogh6U+wtOAjNYGVJ7jaiFTTshvneYYqZLwUlgfyCsyaJZVKM2d6GazY8Jp8XWSFxwBpil/Eh7FqUssia2jz6iym83BSeBGeNiKU53Xqt0KQ6HrCKDNh4tOAvsqdE2aitTHKM8VJZ9tsLoDCw4CTy0ayYvCGbT0X8eZRdPlrYhRik4BczzHq+ksEfUO4p5XmjZ8qjEhdK64Cww4xg2EkPWFirYWV6gHEngkXHBSWAPZBdhPWJcnO58pt2Hcys8j7oUnAUWiY6+OPgRah/REIjuL3T9UbmiBaeBd2X4EoYlyxEyli49our5c8FJ4PBDCguTubXYJY+LiBZblQ+9KDgB7BVYPph7yyfBwdz9FQHxq+BM8DSKgg5puKgQ31Mf6R0arqIuOAXM3Bing6iyfekyDTaEbjhvZo9owXlgiU5yJkLLwLV5CCzC31GuLTgBHKc7MoqziGzmucCAMbYAawrOArOzK2aa+KBG+al9RG0FOoMbyngFJ4HnqXzr7Fcdmw5naQ3t49+jGws+KTy+XnAw6kVn11jqWVNsQ5gUvHziouBTwzEp+MaTYw4IfkwqagyYDgtzX1VwFngMpl/zn6F91Ihsoh9jlbUVnAWeEqFZ3/YZU/nQ2LNxLnnB6WCJjuI9hmq5BmXJn/UfAtmCzw7HF5U45gbh79h07lPTDiavHesnLgo+NxxfL5A9TgcZ/kYjesz3FLZq7MsH/Ao+Nfyrrzz+Bv4DN36H+6dUtwsAAAAASUVORK5CYII="/>
 </div>
 <br>
-<div class = "box2">
+<div class = "box2" onclick="select()">
     <h5>SELECT AN OPTION TO PAY</h5>
-    <div class = "radio">
-    <input type = "radio"/>
-    <h5>Debit Card</h5>
+    <div class = "radio" >
+    <input type = "radio" name ="radio1"/>
+    <h5 >Debit Card</h5>
 
 </div>
 
-<div>
+<div class = "card" >
 <lable >Card Number</lable>
-<input type = "number" placeholder="Enter your card Number"/>
+<input  type = "number" placeholder="Enter your card Number"/>
 <lable>Card Expiry Date</lable>
 <input type = "text" placeholder="MM/YY"/>
 <lable>CVV</lable>
 <input type = "number" placeholder = "Enter your cvv"/>
-<button>Pay</button>
+<button class = "pay" onclick="pay()">Pay</button>
 </div>
 
 
 
-<div class = "radio">
-    <input type = "radio"/>
+<div class = "radio" name ="radio1" onclick="select()">
+    <input type = "radio" name ="radio1"/>
     <h5>Credit Card</h5>
 
 </div>
 
-<div>
+<div class = "card" >
     <lable >Card Number</lable>
-    <input type = "number" placeholder="Enter your card Number"/>
+    <input  id = "cardNumber" type = "number" placeholder="Enter your card Number"/>
     <lable>Card Expiry Date</lable>
     <input type = "text" placeholder="MM/YY"/>
     <lable>CVV</lable>
     <input type = "number" placeholder = "Enter your cvv"/>
-    <button>Pay</button>
+    <button class = "pay" onclick="pay()">Pay</button>
     </div>
     
     <div class = "radio">
-        <input type = "radio"/>
+        <input type = "radio"  name = "radio1"/>
         <h5>UPI   <input type = "text"/ placeholder="yourUPIhandle@bankname"></h5>
-       
+        <button class = "pay" onclick="pay()">Pay</button>
     </div>
     <div>
        
@@ -98,7 +103,30 @@ function popup(){
     swal("Cancle Payment?", {
   buttons: ["No", "Yes"],
 });   
+}
 
+ function select(){
+     document.querySelector(".card").style="visibility:visible";
+
+};
+
+
+function pay(){
+    swal("Payment Succesful", "You will get your Delivery Date on your mobile Number");
 
 }
+
+
+
+
+a = document.getElementById("cardNumber").value;
+ if(a > 16){
+     alert();
+
+
+ }
+
+
+
+
 </script>
