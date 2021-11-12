@@ -71,6 +71,9 @@ total+=amount;
 });
 total=Math.floor(total);
 document.querySelector("h2").textContent=`Total Amount is -${total}`
+if(total==0){
+    document.getElementById("play").textContent="There is Nothing in Cart"
+}
 localStorage.setItem("total",total);
 }
 
