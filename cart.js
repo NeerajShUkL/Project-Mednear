@@ -1,7 +1,7 @@
 // document.getElementById("cheackout").addEventListener("click",function(){
 //     window.location.href="slider.html"
 // })
-var data=JSON.parse(localStorage.getItem("cartBag"));
+var data=JSON.parse(localStorage.getItem("cartBag"))||[];
 
 
 showData(data);
