@@ -30,7 +30,7 @@
             }
 
             .img {
-                width: 410px;
+                width: 450px;
                 height: 500px;
                 margin: auto;       
                 cursor: pointer;
@@ -54,24 +54,46 @@
             }
 
             .spanminus {
-                width: 62px;
-                height: 17px;
-                border-radius: 5px;
-                background-color: teal;
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                background-color: rgb(2, 160, 160);;
+                display: flex; 
+                flex-flow: row;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
             }
 
             .spannumber {
-                width: 62px;
-                height: 17px;
-                border-radius: 5px;
-                background-color: teal;
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                color: rgb(2, 160, 160);
+                background-color: white;
+                display: flex; 
+                flex-flow: row;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
             }
 
             .spanplus {
-                width: 62px;
-                height: 17px;
-                border-radius: 5px;
-                background-color: teal;
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                background-color: rgb(2, 160, 160);;
+                display: flex; 
+                flex-flow: row;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
             }
 
             .p {
@@ -119,6 +141,7 @@
             .off {
                 color: teal;
                 margin-left: 15px;
+                line-height: 0px;   
             }
 
             .p5 {
@@ -202,7 +225,8 @@
         spannumber.innerText = "1";
         let spanplus = document.createElement("span");
         spanplus.setAttribute("class", "spanplus");
-        spanplus.innerText = "+";   
+        spanplus.innerText = "+";  
+        lastbutton.append(spanminus, spannumber, spanplus); 
     })
 
     let p5 = document.createElement("p");
