@@ -20,6 +20,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage2() {
        var prodData =  {
@@ -32,6 +33,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage3() {
        var prodData =  {
@@ -44,6 +46,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage4() {
        var prodData =  {
@@ -56,6 +59,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage5() {
        var prodData =  {
@@ -68,6 +72,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage6() {
        var prodData =  {
@@ -80,6 +85,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage7() {
        var prodData =  {
@@ -92,6 +98,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage8() {
        var prodData =  {
@@ -104,6 +111,7 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
     function addTolocalStorage9() {
        var prodData =  {
@@ -116,4 +124,5 @@ var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
         }
         cartArray.push(prodData)
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
+        alert ("Item is added to cart")
     }
