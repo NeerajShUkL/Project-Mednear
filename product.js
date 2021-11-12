@@ -1,7 +1,6 @@
 document.getElementById("goCart").addEventListener("click",function(){
     window.location.href="cart.html"
 })
-    var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
      var data = [
         {
             image_url: "https://mednear.com/uploads/medicine/0c9b1dbfaeb21f9f0d8305888de0c5b6.jpg",
@@ -409,6 +408,7 @@ document.getElementById("goCart").addEventListener("click",function(){
         },
 
     ]
+var cartArray=JSON.parse(localStorage.getItem("cartBag"))||[];
 
 
 showData(data);
@@ -459,6 +459,7 @@ function showData(data){
 
 }
  function addToCart(item){
+     console.log("here")
     var cartbag=JSON.parse(localStorage.getItem("cartBag"))||[];
 
      for(var i=0;i<cartbag.length;i++){
