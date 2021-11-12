@@ -20,6 +20,10 @@
   margin-top: 12%;
   border-radius: 4px;
 }
+.arro-small:hover{
+  background-color: rgb(59, 59, 59);
+  color: white;
+}
 .slide-left {
   width: 50%;
   height: 50%;
