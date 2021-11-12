@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 280px;
+        }
+       
+        
+        img{
+            width: 100px;
+            margin-left: 80px;
+            height: 100px;
+           }
+        #container {
+            width: 90%;
+            display:flex;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-start: 10px;
+            height: 30px;
+            margin: 50px;
+            
+            margin-left: 50px;
+            
+        
+            
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+           margin: 1px;
+           margin-top: -20px;
+          grid-column: span;
+          
+           
+        
+        
+
+        }
+        button{
+            width:35%;
+            height: 35px;
+            grid-template-columns: 278px 280px 250px;
+            grid-template-rows: 270px 270px 250px;
+
+            background-color: rgb(20, 180, 180);
+            color: white;
+         border-radius: 5px;
+         border: solid rgb(20, 180, 180);
+            margin-left: 170px;
+          margin-bottom: -100px;
+          transform: translateY(-20px);
+        }
+       p{
+           margin-left: 15px;
+          
+           font-size: 17px;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+       pre{
+        font-size: 17px;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         color: grey;
+         margin-left: 15px;
+         margin-bottom: 2px;
+         padding-top: 15px;
+         transform: translateY(-30px);
+             }
+             h5{
+                font-size: 20px;
+                margin-left: 15px;
+                padding-top: -15px;
+                margin-top: 1px;
+                transform: translateY(-50px);
+
+             }
+             h6{
+                 margin-top: -15px;
+                 margin-left: 15px;
+                 transform: translateY(-70px);
+                 font-size: 16px;
+             }
+             hr{
+                margin-top: -10px;
+                 margin-left: 25px;
+                 transform: translateY(-107px);
+                 font-size: 16px;
+                 width: 40px;
+                 color: beige;
+                 
+
+             }
+             table{
+                 border: 1px solid rgb(8, 153, 153);
+            font-size: 13px;
+            color: rgb(8, 153, 153); ;
+            margin-left: 15px;
+        margin-top: 20px;
+                text-align: center;
+                border-radius: 5px;
+                width: 50px;
+                }
+             
+             
+    </style>
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 style="margin-left: 50px; font-size: 26px ;color: rgb(99, 97, 97);">TRENDING PRODUCTS</h1>
+    
+</body>
+</html>
+<script>
+    var data =[
+        {
+            MRP:"₹158.40",
+      type:"NIXIT 2MG LOZENGES FROST...",
+      model:"tube of 15 gm Cream",
+      box:"boxes",
+      price:"₹160.00",
+      
+
+        image_url:
+            "https://mednear.com/uploads/icons/drugs.png",
+            image2_url:"https://mednear.com/uploads/banner/e883ab92781768e89c393d8f4722abcc.jpg",
+        },
+        {
+            MRP:"₹173.70",
+            type:"EASY BATH WET WIPES XL...",
+            model:"packet 10 wet wipes",
+            price:"₹193.00",
+            image_url:
+            "https://mednear.com/uploads/medicine/227f5b56d0db6c737f0b1549f1daec49.png"
+        },
+        {
+            MRP:"₹461.34",
+            type:"NEOGAIN POWER CONDENSED...",
+            model:"box of 200gm Powder",
+            price:"₹466.00",
+            image_url:
+            "https://mednear.com/uploads/medicine/76c2cd60a6a47c18b51d6fa13550b0f6.jpeg"
+        },
+        {
+            MRP:"₹84.15",
+            type:"CASTOR NF CREAM",
+            model:"tube of 15 gm Cream",
+            price:"₹85.00",
+            image_url:
+            "https://mednear.com/uploads/icons/bottle.png"
+        },
+        {
+            MRP:"₹158.40",
+            type:"ACNESTAL FM FACE WASH",
+            model:"tube of 60 ML Face Wash",
+        
+            price:"₹160.00",
+            
+            image_url:
+            "https://mednear.com/uploads/medicine/95dfcb1cd6c2855fc3a4905e1290a630.png",
+           
+        },
+    ]
+    
+  
+      var body=document.querySelector("body");
+      var mainDiv=document.createElement("div");
+      mainDiv.setAttribute("id","container");
+      body.append(mainDiv);
+
+
+
+
+      showProducts();
+      function showProducts(){
+      data.map(function(item){
+        var imageDiv=document.createElement("div")
+        
+        var img=document.createElement("img")
+        img.setAttribute("src",item.image_url)
+        var img2=document.createElement("img2")
+        img2.setAttribute("src",item.image2_url)
+        var p=document.createElement("p");
+        p.textContent=item.type
+        var pre=document.createElement("pre");
+        pre.textContent=item.model
+        var h5=document.createElement("h5");
+        h5.textContent=item.MRP
+        var btn=document.createElement("button")
+        btn.textContent="Add To Cart";
+        var h6=document.createElement("h6")
+        h6.textContent=item.price
+        var table=document.createElement("table")
+        table.textContent="1% Off "
+        var image=document.createElement("image")
+        image.setAttribute("src",item.image)
+        var box=document.createElement("box")
+        box.textContent="boxes"
+        var hr=document.createElement("hr")
+        hr.textContent=
+        
+        
+        
+        imageDiv.append(table,img,p,pre,btn,h5,h6,hr,img2)
+        mainDiv.append(imageDiv);
+      })
+      }
+</script>
