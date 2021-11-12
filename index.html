@@ -128,14 +128,15 @@
 
             .spanminus {
                 width: 25px;
-                height: 23px;
-                border-radius: 50px;
+                /* height: 25px; */
+                border-radius: 50%;
                 background-color: rgb(2, 160, 160);;
                 gap: 2rem;
-                text-align: center;
+                align-items: center;
                 justify-content: center;
                 font-size: large;
                 font-weight: bold;
+                display: flex;
             }
 
             .spannumber {
@@ -153,11 +154,12 @@
 
             .spanplus {
                 width: 25px;
-                height: 23px;
-                border-radius: 50px;
+                /* height: 25px; */
+                border-radius: 50%;
                 background-color: rgb(2, 160, 160);;
                 gap: 2rem;
-                text-align: center;
+                display: flex;
+                align-items: center;
                 justify-content: center;
                 font-size: large;
                 font-weight: bold;
@@ -711,13 +713,22 @@
                 let spanminus = document.createElement("span");
                 spanminus.setAttribute("class", "spanminus");
                 spanminus.innerText = "-";
+                spanminus.addEventListener("click", function() {
+                    let     
+                })
                 let spannumber = document.createElement("span");
                 spannumber.setAttribute("class", "spannumber");
                 spannumber.innerText = "1";
                 let spanplus = document.createElement("span");
                 spanplus.setAttribute("class", "spanplus");
                 spanplus.innerText = "+";
+                lastbutton.innerHTML = "";
                 lastbutton.append(spanminus, spannumber, spanplus);
+                lastbutton.style.display = "flex";
+                lastbutton.style.gap = "10px";
+                lastbutton.style.alignItems = "center";
+                lastbutton.style.backgroundColor = "white";
+
             })
             childDiv.append(lastbutton);
         }
@@ -726,10 +737,10 @@
 
     body.append(div);
     document.querySelector("img").addEventListener("click", function () {
-        window.location.href = "product.html";
+        window.location.href = "rajiv.html";
     })
     document.querySelector(".subtitle").addEventListener("click", function () {
-        window.location.href = "product.html";
+        window.location.href = "rajiv.html";
     })
 
 </script>
