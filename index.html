@@ -669,6 +669,17 @@
             let lastbutton = document.createElement("button");
             lastbutton.setAttribute("class", "lastbutton");
             lastbutton.innerText = "Add To Cart";
+            lastbutton.addEventListener("click", function() {
+                let spanminus = document.createElement("span");
+                spanminus.setAttribute("class", "spanminus");
+                spanminus.innerText = "-";
+                let spannumber = document.createElement("span");
+                spannumber.setAttribute("class", "spannumber");
+                spannumber.innerText = "1";
+                let spanplus = document.createElement("span");
+                spanplus.setAttribute("class", "spanplus");
+                spanplus.innerText = "+";
+            })
             childDiv.append(lastbutton);
         }
         div.appendChild(wrapper);
@@ -681,17 +692,5 @@
     document.querySelector(".subtitle").addEventListener("click", function () {
         window.location.href = "product.html";
     })
-    document.querySelector(".lastbutton").addEventListener("click", function () {
-        var firstbutton = document.createElement("button");
-
-        firstbutton.setAttribute("class", "firstbutton")
-        firstbutton.innerText = "1";
-        childDiv.append(firstbutton);
-        var secondbutton = document.createElement("button")
-        secondbutton.setAttribute("class", "secondbutton")
-        secondbutton.innerText = "2";
-        childDiv.append(secondbutton);
-    })
-
 
 </script>
