@@ -15,8 +15,8 @@
         <div class="nav-container">
             <div class="navbar-div">
                 <a class="nav-brandLogo" href="home.html">
-                    <img class="nav-brandLogoNormal" src="https://mednear.com/assets/web/images/logo-big.svg" alt="MedNear"
-                        title="MedNear">
+                    <img class="nav-brandLogoNormal" src="https://mednear.com/assets/web/images/logo-big.svg"
+                        alt="MedNear" title="MedNear">
                     <img class="brandLogoIcon" src="https://mednear.com/assets/web/images/logo-icon.svg" alt="MedNear"
                         title="MedNear">
                 </a>
@@ -52,13 +52,15 @@
                                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE7pFKhkdDUw2y5itWf4EJZAZPMaWzO3Owpw&usqp=CAU"
                                         alt="">
                                 </div>
-                                <div id="nav-ul-login" >
+                                <div id="nav-ul-login">
                                     <span>Login / Signup</span>
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <div id="cart-icon"><a href="cart"><img style="width: 30px; height: 28px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtsA4eLP6Vxtbc7kteXu6k8CP6StBMG_wA&usqp=CAU" alt=""></a></div>
+                            <div id="cart-icon"><a href="cart"><img style="width: 30px; height: 28px;"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtsA4eLP6Vxtbc7kteXu6k8CP6StBMG_wA&usqp=CAU"
+                                        alt=""></a></div>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +85,7 @@
                     <input class="linp" id="pass" type="password" placeholder="Set Password"><br><br>
                     <input class="linp" type="password" placeholder="Confirm Password"><br><br>
                     <p>By signing up, you agree to our <a href="terms and condition">Terms and Conditions</a></p>
-                    <button class="loginb"id="signbutton">SIGNUP</button>
+                    <button class="loginb" id="signbutton">SIGNUP</button>
                     <p>Existing User?<a href="loginpage.html">Login</a></p>
                 </form>
             </div>
@@ -96,7 +98,8 @@
 <script>
     document.getElementById("signbutton").addEventListener("click", signUp);
     var userArr = JSON.parse(localStorage.getItem("userData")) || [];
-    function signUp() {
+    function signUp(e) {
+        e.preventDefault()
         var email = document.getElementById("email").value;
         var pass = document.getElementById("pass").value;
         var user = document.getElementById("user").value;
@@ -113,4 +116,8 @@
 
         window.location.href = "loginpage.html";
     }
+
+    
+        
+
 </script>

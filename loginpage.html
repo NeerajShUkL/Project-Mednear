@@ -95,10 +95,12 @@
 <script>
     document.getElementById("loginbutton").addEventListener('click', login);
     var regdUsers = JSON.parse(localStorage.getItem("userData"));
+    console.log(regdUsers)
 
-    function login() {
-        var mobile = document.querySelector("#mobile").value;
-        var pass = document.querySelector("#pass").value;
+    function login(e) {
+        e.preventDefault()
+        var mobile = document.getElementById("mobile").value;
+        var pass = document.getElementById("pass").value;
 
         if (mobile == "6264876215" && pass == "neeraj") {
             window.location.href = "admin.html"
@@ -109,8 +111,9 @@
                     regdUsers[i].mobileNo == mobile &&
                     regdUsers[i].passWord == pass
                 ) {
-                    window.location.href = "home.html";
+                   
                     alert("login successful"); 
+                    window.location.href = "home.html";
                     break;   
                 } else {
                     alert("Wrong Mobile Number or password")

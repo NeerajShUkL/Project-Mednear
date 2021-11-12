@@ -408,52 +408,9 @@ document.getElementById("goCart").addEventListener("click",function(){
             lprice: "Rs.255.00"
         },
 
-        {
-            image_url: "https://mednear.com/uploads/medicine/5dc63bdf4d0d609eeac3851b9a76a659.png",
-            title: "SBL 111 JOINT CARE PACK (COMBO OF 2)",
-            subtitle: "SBL 111 JOINT CARE PACK…",
-            subtext: "packet of 1 Kit",
-            price: "Rs.237.60",
-            lprice: "Rs.240.00"
-        },
-
-        {
-            image_url: "https://mednear.com/uploads/medicine/2fa69169c69862fef55d305c3dc87c0c.png",
-            title: "SBL 120 ANTI-PILES PACK (COMBO OF 2)",
-            subtitle: "SBL 120 ANTI-PILES PACK (COMBO",
-            subtext: "packet of 1 Kit",
-            price: "Rs.198.00",
-            lprice: "Rs.200.00"
-        },
-
-
-        {
-            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
-            title: "SBL FORMICA RUFA DILUTION 1000 CH",
-            subtitle: "SBL FORMICA RUFA DILUTION…",
-            subtext: "bottle of 30 ml Dilution",
-            price: "Rs.118.80",
-            lprice: "Rs.120.00"
-        },
-
-        {
-            image_url: "https://mednear.com/uploads/medicine/60040a8bf016a87c483037474eaf8b5b.jpg",
-            title: "SBL FORMICA RUFA DILUTION 1000 CH",
-            subtitle: "SBL HAMAMELIS VIRGINICA DILU",
-            subtext: "bottle of 30 ml Dilution",
-            price: "Rs.118.80",
-            lprice: "Rs.120.00"
-        },
-
-        {
-            image_url: "https://mednear.com/uploads/medicine/3f84b4dc387d68fafbe7c654985355bc.jpg",
-            title: "SBL GUAIACUM DILUTION 1000 CH",
-            subtitle: "SBL GUAIACUM DILUTION 1000 C",
-            subtext: "bottle of 30 ml Dilution",
-            price: "Rs.118.80",
-            lprice: "Rs.120.00"
-        }
     ]
+
+
 showData(data);
 
 function showData(data){
