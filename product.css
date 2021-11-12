@@ -29,12 +29,18 @@ body {
 }
 h1 {
   font-size: 18px;
+  margin: 0px;
 }
 h2 {
   font-size: 14px;
+  margin: 0px;
 }
 h5 {
   text-decoration: line-through;
+  margin: 0px;
+}
+h4 {
+  margin: 0px;
 }
 #addCart {
   background-color: #189ea3;
