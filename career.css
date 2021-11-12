@@ -95,3 +95,12 @@ p{
  #container1{
      background-color: white;
  }
+ .hiring:hover{
+    color: rgb(2, 177, 177);   
+ }
+ a{
+     text-decoration: none;
+     color: black;
+    
+ }
+ 
