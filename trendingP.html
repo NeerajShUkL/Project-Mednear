@@ -192,7 +192,7 @@
                             <p style="font-size: 8px;"><s>₹1499.00</s></p>
                         </div>
                         <div class="tpcPc-div">
-                            <button class="atc-btn">Add ot cart</button>
+                            <button id="tpcPc-btn6" class="atc-btn">Add ot cart</button>
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,7 @@
                             <p style="font-size: 8px;"><s>₹749.00</s></p>
                         </div>
                         <div class="tpcPc-div">
-                            <button class="atc-btn">Add ot cart</button>
+                            <button id="tpcPc-btn7" class="atc-btn">Add ot cart</button>
                         </div>
                     </div>
                 </div>
@@ -240,7 +240,7 @@
                             <p style="font-size: 8px;"><s>₹2,075.00</s></p>
                         </div>
                         <div class="tpcPc-div">
-                            <button class="atc-btn">Add ot cart</button>
+                            <button id="tpcPc-btn8" class="atc-btn">Add ot cart</button>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                             <p style="font-size: 8px;"><s>₹849.00</s></p>
                         </div>
                         <div class="tpcPc-div">
-                            <button class="atc-btn">Add ot cart</button>
+                            <button id="tpcPc-btn9" class="atc-btn">Add ot cart</button>
                         </div>
                     </div>
                 </div>
@@ -448,6 +448,10 @@
     document.getElementById("tpcPc-btn3").addEventListener("click", addTolocalStorage3)
     document.getElementById("tpcPc-btn4").addEventListener("click", addTolocalStorage4)
     document.getElementById("tpcPc-btn5").addEventListener("click", addTolocalStorage5)
+    document.getElementById("tpcPc-btn6").addEventListener("click", addTolocalStorage6)
+    document.getElementById("tpcPc-btn7").addEventListener("click", addTolocalStorage7)
+    document.getElementById("tpcPc-btn8").addEventListener("click", addTolocalStorage8)
+    document.getElementById("tpcPc-btn9").addEventListener("click", addTolocalStorage9)
 
     function addTolocalStorage1() {
        var prodData =  {
@@ -498,6 +502,54 @@
         localStorage.setItem("cartBag",JSON.stringify(cartArray))
     }
     function addTolocalStorage5() {
+       var prodData =  {
+            image_url: "https://mednear.com/uploads/medicine/9746a65404b16f1d5e4662deea0b66d6.png",
+            title: "STUDS CLASSIC WEIGHT GAINER",
+            subtitle: "EASY BATH WET WIPES..",
+            subtext: "packet 10 wet wipes",
+            price: "Rs.319.50",
+            lprice: "Rs.355.00"
+        }
+        cartArray.push(prodData)
+        localStorage.setItem("cartBag",JSON.stringify(cartArray))
+    }
+    function addTolocalStorage6() {
+       var prodData =  {
+            image_url: "https://mednear.com/uploads/medicine/9746a65404b16f1d5e4662deea0b66d6.png",
+            title: "STUDS CLASSIC WEIGHT GAINER",
+            subtitle: "EASY BATH WET WIPES..",
+            subtext: "packet 10 wet wipes",
+            price: "Rs.319.50",
+            lprice: "Rs.355.00"
+        }
+        cartArray.push(prodData)
+        localStorage.setItem("cartBag",JSON.stringify(cartArray))
+    }
+    function addTolocalStorage7() {
+       var prodData =  {
+            image_url: "https://mednear.com/uploads/medicine/9746a65404b16f1d5e4662deea0b66d6.png",
+            title: "STUDS CLASSIC WEIGHT GAINER",
+            subtitle: "EASY BATH WET WIPES..",
+            subtext: "packet 10 wet wipes",
+            price: "Rs.319.50",
+            lprice: "Rs.355.00"
+        }
+        cartArray.push(prodData)
+        localStorage.setItem("cartBag",JSON.stringify(cartArray))
+    }
+    function addTolocalStorage8() {
+       var prodData =  {
+            image_url: "https://mednear.com/uploads/medicine/9746a65404b16f1d5e4662deea0b66d6.png",
+            title: "STUDS CLASSIC WEIGHT GAINER",
+            subtitle: "EASY BATH WET WIPES..",
+            subtext: "packet 10 wet wipes",
+            price: "Rs.319.50",
+            lprice: "Rs.355.00"
+        }
+        cartArray.push(prodData)
+        localStorage.setItem("cartBag",JSON.stringify(cartArray))
+    }
+    function addTolocalStorage9() {
        var prodData =  {
             image_url: "https://mednear.com/uploads/medicine/9746a65404b16f1d5e4662deea0b66d6.png",
             title: "STUDS CLASSIC WEIGHT GAINER",
