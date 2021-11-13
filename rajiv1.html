@@ -1,0 +1,294 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            body {
+                background-color: rgb(235, 229, 229);
+            }
+
+            .div {
+                width: 1339px;
+                height: 600px;
+                display: flex; 
+                flex-flow: row;
+                gap: 2rem;
+                justify-content: center;
+            }
+
+            .childDiv {
+                width: 425px;
+                height: 630px;
+            }
+
+            .textdiv {
+                width: 750px;
+                height: 600px;
+                margin-top: 100px;
+                background-color: white;
+                margin-top: 99px;
+            }
+
+            .img {
+                width: 450px;
+                height: 500px;
+                margin: auto;       
+                cursor: pointer;
+                margin-top: 100px;
+            }
+
+            .lastbutton {
+                width: 190px;
+                height: 50px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-left: 15px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+            .lastbutton:hover {
+                cursor: pointer;
+                background-color: teal;
+            }
+
+            .spanminus {
+                width: 25px;
+                /* height: 25px; */
+                border-radius: 50%;
+                background-color: rgb(2, 160, 160);;
+                gap: 2rem;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+                display: flex;
+            }
+
+            .spannumber {
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                color: rgb(2, 160, 160);
+                background-color: white;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            .spanplus {
+                width: 25px;
+                /* height: 25px; */
+                border-radius: 50%;
+                background-color: rgb(2, 160, 160);;
+                gap: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+            }
+            .p {
+                margin-left: 15px;
+                color: teal;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            .p1 {
+                margin-left: 15px;
+                color: rgb(63, 63, 63);
+                line-height: 0px;
+            }
+
+            .p2 {
+                margin-left: 15px;
+                color: rgb(65, 64, 64);
+                font-size: large;
+                font-weight: bold;
+                line-height: 35px;
+            }
+
+            .p2:hover {
+                color: teal;
+                cursor: pointer;
+            }
+
+            .p3 {
+                margin-left: 15px;
+                color: rgb(65, 64, 64);
+                font-size: large;
+                font-weight: bold;
+                line-height: 0px;
+            }
+
+            .p4 {
+                margin-left: 15px;
+                color: rgb(65, 64, 64);
+                font-size: 15px;
+                font-weight: bold;
+                text-decoration: line-through;
+            }
+
+            .off {
+                color: teal;
+                margin-left: 15px;
+                line-height: 0px;   
+            }
+
+            .p5 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 25px;
+            }
+
+            .p6 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 5px;
+            }
+
+            .p7 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 5px;
+            }
+
+            .p8 {
+                margin-left: 15px;
+                color: teal;
+                font-size: 13px;
+                line-height: 5px;
+            }
+
+            .p9 {
+                margin-left: 15px;
+                font-size: large;
+                font-weight: bold;
+                color: rgb(94, 93, 93);
+                margin-top: 55px;
+            }
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>
+<script>
+    
+    var arr = [
+        {
+            quantity: 1,
+        },
+    ]
+    let count1 = 0;
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+
+
+    let textdiv = document.createElement("div");
+    textdiv.setAttribute("class", "textdiv");
+    let p = document.createElement("p")
+    p.setAttribute("class", "p");
+    p.innerText = "SBL FORMICA RUFA DILUTION 1000 CH";
+    let p1 = document.createElement("p");
+    p1.setAttribute("class", "p1");
+    p1.innerText = "(bottle of 30 ml Dilution)";
+    let p2 = document.createElement("p");
+    p2.setAttribute("class", "p2");
+    p2.innerText = "SBL Pvt Ltd"
+    let p3 = document.createElement("p");
+    p3.setAttribute("class", "p3");
+    p3.innerText = "Rs.118.70";
+    let p4 = document.createElement("p");
+    p4.setAttribute("class", "p4");
+    p4.innerText = "Rs.120.00";
+    let off = document.createElement("p");
+    off.setAttribute("class", "off");
+    off.innerText = "1% Off";
+
+    
+    let lastbutton = document.createElement("button");
+    lastbutton.setAttribute("class", "lastbutton");
+    lastbutton.innerText = "Add To Cart";
+    lastbutton.addEventListener("click", function(event) {
+                let spanminus = document.createElement("span");
+                spanminus.setAttribute("class", "spanminus");
+                spanminus.innerText = "-";
+                spanminus.setAttribute("id", `cart-qty-${index}-${i}`);
+                spanminus.setAttribute("id", `cart-qty-minus-${index}-${i}`);
+                let spannumber = document.createElement("span");
+                spannumber.setAttribute("class", "spannumber");
+                spannumber.innerText = arr[count1] && arr[count1].quantity ? arr[count1].quantity : 1;
+                let spanplus = document.createElement("span");
+                spanplus.setAttribute("class", "spanplus");
+                spanplus.innerText = "+";
+                spanplus.setAttribute("id", `cart-qty-plus-${index}-${i}`);
+                lastbutton.innerHTML = "";
+                lastbutton.style.display = "flex";
+                lastbutton.style.gap = "10px";
+                lastbutton.style.alignItems = "center";
+                lastbutton.style.backgroundColor = "white";
+                if(event.target.id === `cart-qty-plus-${index}-${i}`) {
+                    let item = arr[index];
+                    item.quantity = (item.quantity) + 1;
+                    spannumber.innerText = item.quantity;
+                }
+
+                if (event.target.id === `cart-qty-minus-${index}-${i}`) {
+                    let item = arr[index];
+                    if (item.quantity <= 1) {
+                        item.quantity = 1
+                    } else {
+                        item.quantity = (item.quantity) - 1;
+                    }
+                    spannumber.innerText = item.quantity;
+                }
+                
+                lastbutton.append(spanminus, spannumber, spanplus);
+            })
+
+    let p5 = document.createElement("p");
+    p5.setAttribute("class", "p5");
+    p5.innerText = "Note:Availability / Confirmation & Deliveries of product will be assured once the Pharmacy partners & Shipping partners are confirmed.";
+
+    let p6 = document.createElement("p");
+    p6.setAttribute("class", "p6");
+    p6.innerText = "1. Do not share your credentials or otp with anyone on call,email or sms.";
+
+    let p7 = document.createElement("p");
+    p7.setAttribute("class", "p7");
+    p7.innerText = "2. MedNear never asks you for your credentials or otp.";
+
+    let p8 = document.createElement("p");
+    p8.setAttribute("class", "p8");
+    p8.innerText = "3. Always create a strong password and keep different passwords for different websites.";
+
+    let p9 = document.createElement("p");
+    p9.setAttribute("class", "p9");
+    p9.innerText = "AVAILABLE OTHER VARIANTS";
+
+
+    textdiv.append(p, p1, p2, p3, p4, off, lastbutton, p5, p6, p7, p8, p9);
+    div.append(textdiv);
+
+    let childDiv = document.createElement("div");
+    childDiv.setAttribute("class", "childDiv");
+    let img = document.createElement("img");
+    img.setAttribute("class", "img");
+    img.setAttribute("src", "https://mednear.com/uploads/medicine/0c9b1dbfaeb21f9f0d8305888de0c5b6.jpg");
+    img.setAttribute("title", "SBL FORMICA RUFA DILUTION 1000 CH");
+    childDiv.append(img);
+    div.append(childDiv);
+
+    body.append(div);
+
+
+</script>
