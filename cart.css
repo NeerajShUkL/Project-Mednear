@@ -87,3 +87,36 @@ input {
 #cheackout {
   width: 30%;
 }
+@media (max-width: 920px) {
+  section {
+    flex-direction: column;
+  }
+  #product {
+    /* width: 1200px; */
+    width: 90%;
+  }
+  #adrece {
+    width: 70%;
+  }
+}
+@media (min-width: 700px) and (max-width: 920px) {
+  #product {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 700px) {
+  #product {
+    grid-template-columns: auto auto;
+  }
+  #goCart {
+    width: 40%;
+  }
+}
+@media (max-width: 320px) {
+  #product {
+    grid-template-columns: auto;
+  }
+  #goCart {
+    width: 50%;
+  }
+}
