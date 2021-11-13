@@ -1,0 +1,464 @@
+<html>
+    <head>
+
+        <title></title>
+
+        <style>
+
+            body {
+                background-color: rgb(235, 229, 229);
+            }
+
+            p {
+                margin-left: 3.2rem;
+                margin-top: 5rem;
+            }
+
+            span:hover {
+                color: teal;
+                cursor: pointer;
+            }
+
+            .div {
+                width: 100%;
+                height: 1800px;
+                display: flex;
+                flex-flow: row;
+                gap: 1.5rem;
+                justify-content: center;
+            }
+
+            .wrapper {
+                display: flex;
+                gap: 1.5rem;
+                flex-flow: column;
+            }
+
+            .child-div {
+                height: 260px;
+                width: 235px;
+                background-color: white;
+                display: flex;
+                flex-flow: column;
+            }
+
+            .child-div:hover {
+               box-shadow: 0 7px 17px 0 rgb(23 84 116 / 18%);
+            }
+
+            .button {
+                width: 55px;
+                height: 35px;
+                background-color: white;
+                border-radius: 4px;
+                border: 1px solid teal;
+                color: teal;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .img {
+                width: 110px;
+                height: 190px;
+                margin: auto;
+                cursor: pointer;
+            }
+
+            .subtitle {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            .subtitle:hover{
+                color: teal;
+                cursor: pointer;
+            }
+
+            .subtext {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 12px;
+                color: gray;
+            }
+            .price {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                
+            }
+            .lprice {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                margin-bottom: 5px;
+                font-size: 11px;
+                color: gray;
+                text-decoration-line: line-through;
+            }
+
+            .lastbutton {
+                width: 90px;
+                height: 55px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+            .lastbutton:hover {
+                cursor: pointer;
+                background-color: teal;
+            }
+
+            .spanminus {
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                background-color: rgb(2, 160, 160);;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            .spannumber {
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                color: rgb(2, 160, 160);
+                background-color: white;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            .spanplus {
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                background-color: rgb(2, 160, 160);;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+            }
+            
+            hr {
+                color: gray;
+                width: 1267px;
+            }
+
+            .firstbutton {
+                width: div45px;
+                height: 55firstbuttonpx;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+            .secondbutton {
+                width: 45px;
+                height: 55px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <p><b><span> Home</span> /<span> Categories</span></b> / Mothercare</p>  
+        <hr>
+    </body>
+
+</html>
+
+
+<script> 
+     var arr = [
+        {
+            image_url: "https://mednear.com/uploads/medicine/7ffe11d231a508a4ee4c7e0a2b36440f.jpg",
+            title: "SHELCAL -250 TABLET",
+            subtitle: "SHELCAL -250 TABLET",
+            subtext: "strip of 30 tablets",
+            price: "Rs.94.05",
+            lprice: "Rs.99.00" 
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/708dc7aa2d8393b6eb81dc9637ebae49.jpg",
+            title: "THREPTIN MICROMIX HIGH-CALORIE PROTEIN POWDER VANILLA",
+            subtitle: "THREPTIN MICROMIX HIGH-CAL",
+            subtext: "box of 200 gm Powder",
+            price: "Rs.400.95",
+            lprice: "Rs.405.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/adf370a462b8d72c31d42a290d5b09a9.png",
+            title: "VITAGREAT TABLET",
+            subtitle: "VITAGREAT TABLET",
+            subtext: "strip of 10 tablets",
+            price: "Rs.93.95",
+            lprice: "Rs.98.89"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/8cdb80ddf79867f988fb873b39aa59ca.jpg",
+            title: "CORUS SOFT GELATIN CAPSULE",
+            subtitle: "CORUS SOFT GELATIN CAPSU...",
+            subtext: "strip of 10 soft gelatin capsules",
+            price: "Rs.141.55",
+            lprice: "Rs.149.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "NEUROKAB OD CAPSULE",
+            subtitle: "NEUROKAB OD CAPSULE…",
+            subtext: "strip of 10 capsules",
+            price: "Rs.71.28",
+            lprice: "Rs.72.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/7d2c4c3a4ecf10b8b1863cb645f87cc4.jpg",
+            title: "GLOBAC XT TABLET",
+            subtitle: "GLOBAC XT TABLET…",
+            subtext: "strip of 15 tablets",
+            price: "Rs.210.80",
+            lprice: "Rs.221.90"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/6a9daeccac271457237c79e4f52f0268.jpg",
+            title: "MUMFER D3 TABLET",
+            subtitle: "MUMFER D3 TABLET…",
+            subtext: "strip of 10 tablets",
+            price: "Rs.140.58",
+            lprice: "Rs.142.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/7f73c30253d3ddd50d939b5b88d711bb.jpg",
+            title: "MEE MEE WASHABLE COTTON MATERNITY BREAST PADS WHITE",
+            subtitle: "MEE MEE WASHABLE COTTON…",
+            subtext: "packet of 6 pads",
+            price: "Rs.395.01",
+            lprice: "Rs.399.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/c477050ee29948753e45e49fec24b261.jpg",
+            title: "ARGITAS ORANGE GRANULES",
+            subtitle: "ARGITAS ORANGE GRANULES…",
+            subtext: "sachet of 10 gm Granules",
+            price: "Rs.46.55",
+            lprice: "Rs.49.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/58c6299c4e613cfc26c9d367988e5ef9.jpg",
+            title: "CPINK TABLET SR",
+            subtitle: "CPINK TABLET SR",
+            subtext: "strip of 15 tablet sr",
+            price: "Rs.219.35",
+            lprice: "Rs.230.90"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "FECOZER TABLET",
+            subtitle: "FECOZER TABLET…",
+            subtext: "strip of 10 tablets",
+            price: "Rs.99.75",
+            lprice: "Rs.105.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/102593d15a5897f9ea77150f6bfc1664.jpg",
+            title: "BIOPREG PLUS CAPSULE",
+            subtitle: "BIOPREG PLUS CAPSULE…",
+            subtext: "strip of 10 capsules",
+            price: "Rs.99.00",
+            lprice: "Rs.100.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/c94c34c4bd5c00f998da2fad4e6ab5a1.png",
+            title: "ARG 9 GRANULES",
+            subtitle: "ARG 9 GRANULES",
+            subtext: "packet of 5 gm Granules",
+            price: "Rs.36.86",
+            lprice: "Rs.38.80"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/977e01725c1ed0e988201af8bae21342.jpg",
+            title: "FERICH XT TABLET",
+            subtitle: "FERICH XT TABLET",
+            subtext: "strip of 10 tablets",
+            price: "Rs.75.45",
+            lprice: "Rs.76.21"
+         },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/1ed4f1a3914f83d88992a29ebd3b7f26.jpg",
+            title: "GYARGIN SUGAR FREE SACHET ORANGE-LEMON",
+            subtitle: "GYARGIN SUGAR FREE SACHET...",
+            subtext: "sachet of 5 gm Granules",
+            price: "Rs.53.29",
+            lprice: "Rs.56.10"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/8f98d2c43c1cbd67fefef74749463e27.jpg",
+            title: "ALFABOL CAPSULE",
+            subtitle: "PIGEON BREAST PUMP MANUAL",
+            subtext: "packet of 1 Breast Pump",
+            price: "Rs.3,705.00",
+            lprice: "Rs.3,900.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/1fc36a4e03d75319d0702e2e42bef4c8.jpg",
+            title: "FIXDERMA STRALLIUM STRETCH MARK CREAM",
+            subtitle: "FIXDERMA STRALLIUM STRETCH",
+            subtext: "tube of 75 gm Cream",
+            price: "Rs.403.75",
+            lprice: "Rs.425.00"
+        },
+
+         {
+            image_url: "https://mednear.com/uploads/medicine/710554c11d11440935240ecbae1eaf44.jpg",
+            title: "FOLINEXT GOLD TABLET",
+            subtitle: "FOLINEXT GOLD TABLET…",
+            subtext: "strip of 10 tablets",
+            price: "Rs.128.25",
+            lprice: "Rs.135.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/68e331593586c633a68994f7b320c773.jpg",
+            title: "SBL FERRUMSIP SYRUP",
+            subtitle: "SBL FERRUMSIP SYRUP",
+            subtext: "bottle of 115 ml Syrup",
+            price: "Rs.94.05",
+            lprice: "Rs.95.00"
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "CHICCO ANTIBACTERIAL BREAST PROTECTION PADS",
+            subtitle: "CHICCO ANTIBACTERIAL BREAS",
+            subtext: "packet of 30 pads",
+            price: "Rs.345.51",
+            lprice: "Rs.349.00"
+        },
+    ]
+    let count = 0;
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+    for(let i = 0; i < 5; i++) {
+        const wrapper = document.createElement("div");
+        wrapper.setAttribute("class", "wrapper");
+        for(let index = 0; index < 4; index++) {
+            const childDiv = document.createElement("div");
+            childDiv.setAttribute("class", "child-div");
+            let button = document.createElement("button");
+            button.setAttribute("class", "button");
+            button.innerText = "1% Off";
+
+            
+            childDiv.appendChild(button);
+            wrapper.appendChild(childDiv);
+
+            let img = document.createElement("img");
+            img.setAttribute("class", "img");
+            img.setAttribute("src", arr[count].image_url);
+            img.setAttribute("title", arr[count].title);
+            childDiv.append(img);
+
+            let subtitle = document.createElement("p");
+            subtitle.setAttribute("class", "subtitle");
+            subtitle.innerText = arr[count].subtitle;
+            childDiv.append(subtitle);
+
+            let subtext = document.createElement("p");
+            subtext.setAttribute("class", "subtext");
+            subtext.innerText = arr[count].subtext;
+            childDiv.append(subtext);
+
+            let price = document.createElement("p");
+            price.setAttribute("class", "price");
+            price.innerText = arr[count].price;
+            childDiv.append(price);
+
+            let lprice = document.createElement("p");
+            lprice.setAttribute("class", "lprice");
+            lprice.innerText = arr[count].lprice;
+            childDiv.append(lprice);
+
+            count++;
+
+
+            let lastbutton = document.createElement("button");
+            lastbutton.setAttribute("class", "lastbutton");
+            lastbutton.innerText = "Add To Cart";
+            lastbutton.addEventListener("click", function() {
+                let spanminus = document.createElement("span");
+                spanminus.setAttribute("class", "spanminus");
+                spanminus.innerText = "-";
+                let spannumber = document.createElement("span");
+                spannumber.setAttribute("class", "spannumber");
+                spannumber.innerText = "1";
+                let spanplus = document.createElement("span");
+                spanplus.setAttribute("class", "spanplus");
+                spanplus.innerText = "+";
+                lastbutton.append(spanminus, spannumber, spanplus);
+            })
+            childDiv.append(lastbutton);
+        }
+        div.appendChild(wrapper);
+    }
+
+    body.append(div);
+    document.querySelector("img").addEventListener("click", function () {
+        window.location.href = "product.html";
+    })
+    document.querySelector(".subtitle").addEventListener("click", function () {
+        window.location.href = "product.html";
+    })
+
+</script>
