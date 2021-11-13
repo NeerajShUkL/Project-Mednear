@@ -214,7 +214,8 @@
             subtitle: "SBL FORMICA RUFA DILUTION…",
             subtext: "bottle of 30 ml Dilution",
             price: "Rs.118.80",
-            lprice: "Rs.120.00" 
+            lprice: "Rs.120.00",
+            quantity: 1,
         },
 
         {
@@ -657,7 +658,7 @@
             subtext: "bottle of 30 ml Dilution",
             price: "Rs.118.80",
             lprice: "Rs.120.00"
-        }
+        },
     ]
     let count = 0;
     let body = document.querySelector("body");
@@ -709,16 +710,24 @@
             let lastbutton = document.createElement("button");
             lastbutton.setAttribute("class", "lastbutton");
             lastbutton.innerText = "Add To Cart";
-            lastbutton.addEventListener("click", function() {
+            lastbutton.addEventListener("click", function(event) {
                 let spanminus = document.createElement("span");
                 spanminus.setAttribute("class", "spanminus");
                 spanminus.innerText = "-";
-                spanminus.addEventListener("click", function() {
-                    let     
-                })
+                // document.querySelector(".spanminus").addEventListener("click", function() {
+                //     let item = arr[count];
+                //     console.log(item);
+                //})
+                //console.log(event);
+                if(event.target.className === "spanPlus") {
+                    let item = arr[count];
+                    item.quantity = item.quantity++;
+                    console.log(quantity);
+                } 
                 let spannumber = document.createElement("span");
                 spannumber.setAttribute("class", "spannumber");
-                spannumber.innerText = "1";
+                console.log(arr[count]);
+                spannumber.innerText = arr[count].quantity ? String(arr[count].quantity) : "1";
                 let spanplus = document.createElement("span");
                 spanplus.setAttribute("class", "spanplus");
                 spanplus.innerText = "+";
@@ -731,8 +740,10 @@
 
             })
             childDiv.append(lastbutton);
+            // count++;
         }
         div.appendChild(wrapper);
+        // count++;
     }
 
     body.append(div);
@@ -742,5 +753,10 @@
     document.querySelector(".subtitle").addEventListener("click", function () {
         window.location.href = "rajiv.html";
     })
+
+    // document.querySelector(".spanminus").addEventListener("click", function() {
+    //     let item = arr[count];
+    //     console.log(item);
+    // })
 
 </script>
