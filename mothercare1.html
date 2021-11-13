@@ -212,7 +212,8 @@
             subtitle: "SHELCAL -250 TABLET",
             subtext: "strip of 30 tablets",
             price: "Rs.94.05",
-            lprice: "Rs.99.00" 
+            lprice: "Rs.99.00",
+            quantity: 1,
         },
 
         {
@@ -221,7 +222,8 @@
             subtitle: "THREPTIN MICROMIX HIGH-CAL",
             subtext: "box of 200 gm Powder",
             price: "Rs.400.95",
-            lprice: "Rs.405.00"
+            lprice: "Rs.405.00",
+            quantity: 1,
         },
 
         {
@@ -230,7 +232,8 @@
             subtitle: "VITAGREAT TABLET",
             subtext: "strip of 10 tablets",
             price: "Rs.93.95",
-            lprice: "Rs.98.89"
+            lprice: "Rs.98.89",
+            quantity: 1,
         },
 
         {
@@ -239,7 +242,8 @@
             subtitle: "CORUS SOFT GELATIN CAPSU...",
             subtext: "strip of 10 soft gelatin capsules",
             price: "Rs.141.55",
-            lprice: "Rs.149.00"
+            lprice: "Rs.149.00",
+            quantity: 1,
         },
 
         {
@@ -248,7 +252,8 @@
             subtitle: "NEUROKAB OD CAPSULE…",
             subtext: "strip of 10 capsules",
             price: "Rs.71.28",
-            lprice: "Rs.72.00"
+            lprice: "Rs.72.00",
+            quantity: 1,
         },
 
         {
@@ -257,7 +262,8 @@
             subtitle: "GLOBAC XT TABLET…",
             subtext: "strip of 15 tablets",
             price: "Rs.210.80",
-            lprice: "Rs.221.90"
+            lprice: "Rs.221.90",
+            quantity: 1,
         },
 
         {
@@ -266,7 +272,8 @@
             subtitle: "MUMFER D3 TABLET…",
             subtext: "strip of 10 tablets",
             price: "Rs.140.58",
-            lprice: "Rs.142.00"
+            lprice: "Rs.142.00",
+            quantity: 1,
         },
 
         {
@@ -275,7 +282,8 @@
             subtitle: "MEE MEE WASHABLE COTTON…",
             subtext: "packet of 6 pads",
             price: "Rs.395.01",
-            lprice: "Rs.399.00"
+            lprice: "Rs.399.00",
+            quantity: 1,
         },
 
         {
@@ -284,7 +292,8 @@
             subtitle: "ARGITAS ORANGE GRANULES…",
             subtext: "sachet of 10 gm Granules",
             price: "Rs.46.55",
-            lprice: "Rs.49.00"
+            lprice: "Rs.49.00",
+            quantity: 1,
         },
 
         {
@@ -293,7 +302,8 @@
             subtitle: "CPINK TABLET SR",
             subtext: "strip of 15 tablet sr",
             price: "Rs.219.35",
-            lprice: "Rs.230.90"
+            lprice: "Rs.230.90",
+            quantity: 1,
         },
 
         {
@@ -302,7 +312,8 @@
             subtitle: "FECOZER TABLET…",
             subtext: "strip of 10 tablets",
             price: "Rs.99.75",
-            lprice: "Rs.105.00"
+            lprice: "Rs.105.00",
+            quantity: 1,
         },
 
         {
@@ -311,7 +322,8 @@
             subtitle: "BIOPREG PLUS CAPSULE…",
             subtext: "strip of 10 capsules",
             price: "Rs.99.00",
-            lprice: "Rs.100.00"
+            lprice: "Rs.100.00",
+            quantity: 1,
         },
 
         {
@@ -320,7 +332,8 @@
             subtitle: "ARG 9 GRANULES",
             subtext: "packet of 5 gm Granules",
             price: "Rs.36.86",
-            lprice: "Rs.38.80"
+            lprice: "Rs.38.80",
+            quantity: 1,
         },
 
         {
@@ -329,7 +342,8 @@
             subtitle: "FERICH XT TABLET",
             subtext: "strip of 10 tablets",
             price: "Rs.75.45",
-            lprice: "Rs.76.21"
+            lprice: "Rs.76.21",
+            quantity: 1,
          },
 
         {
@@ -338,7 +352,8 @@
             subtitle: "GYARGIN SUGAR FREE SACHET...",
             subtext: "sachet of 5 gm Granules",
             price: "Rs.53.29",
-            lprice: "Rs.56.10"
+            lprice: "Rs.56.10",
+            quantity: 1,
         },
 
         {
@@ -347,7 +362,8 @@
             subtitle: "PIGEON BREAST PUMP MANUAL",
             subtext: "packet of 1 Breast Pump",
             price: "Rs.3,705.00",
-            lprice: "Rs.3,900.00"
+            lprice: "Rs.3,900.00",
+            quantity: 1,
         },
 
         {
@@ -356,7 +372,8 @@
             subtitle: "FIXDERMA STRALLIUM STRETCH",
             subtext: "tube of 75 gm Cream",
             price: "Rs.403.75",
-            lprice: "Rs.425.00"
+            lprice: "Rs.425.00",
+            quantity: 1,
         },
 
          {
@@ -365,7 +382,8 @@
             subtitle: "FOLINEXT GOLD TABLET…",
             subtext: "strip of 10 tablets",
             price: "Rs.128.25",
-            lprice: "Rs.135.00"
+            lprice: "Rs.135.00",
+            quantity: 1,
         },
 
         {
@@ -374,7 +392,8 @@
             subtitle: "SBL FERRUMSIP SYRUP",
             subtext: "bottle of 115 ml Syrup",
             price: "Rs.94.05",
-            lprice: "Rs.95.00"
+            lprice: "Rs.95.00",
+            quantity: 1,
         },
 
         {
@@ -383,7 +402,8 @@
             subtitle: "CHICCO ANTIBACTERIAL BREAS",
             subtext: "packet of 30 pads",
             price: "Rs.345.51",
-            lprice: "Rs.349.00"
+            lprice: "Rs.349.00",
+            quantity: 1,
         },
     ]
     let count = 0;
@@ -429,7 +449,7 @@
             lprice.setAttribute("class", "lprice");
             lprice.innerText = arr[count].lprice;
             childDiv.append(lprice);
-
+            childDiv.setAttribute("id", `child-div-${index}-${i}`);
             count++;
 
 
@@ -476,7 +496,6 @@
         }
         div.appendChild(wrapper);
     }
-
     body.append(div);
     document.querySelector("img").addEventListener("click", function () {
         window.location.href = "mothercare_product.html";
