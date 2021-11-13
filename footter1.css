@@ -1,187 +1,184 @@
-.universal-div{
-    margin-top: 10px;
-    width: 100%;
+.universal-div {
+  margin-top: 10px;
+  width: 100%;
 }
 
-
 .map-container {
-    border-bottom: 1px solid rgb(197, 197, 197);
-    width: 100%;
-    height: 320px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-
+  border-bottom: 1px solid rgb(197, 197, 197);
+  width: 100%;
+  /* height: 320px; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
 }
 
 #map-india {
-
-    width: 30%;
-    height: 87%;
-    margin: auto;
+  width: 30%;
+  height: 87%;
+  margin: auto;
 }
 
 #map-text {
-
-    width: 64%;
-    height: %;
-    margin: auto;
+  width: 64%;
+  height: %;
+  margin: auto;
 }
 
 #map-heading {
-    color: #189ea3;
-    font-size: 23px;
+  color: #189ea3;
+  font-size: 23px;
 }
 
-#map-heading>span {
-    color: #189ea3;
-    font-weight: 700;
+#map-heading > span {
+  color: #189ea3;
+  font-weight: 700;
 }
 
 #map-para {
-    font-size: 12px;
-    line-height: 230%;
+  font-size: 12px;
+  line-height: 230%;
 }
 
 #trust-boxes-container {
-    background-color: white;
-    border-bottom: 1px solid rgb(197, 197, 197);
-    width: 100%;
-    height: 100px;
+  background-color: white;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  width: 100%;
+  height: 100px;
 }
 
 #trust-boxes-child {
-    border-right: 1px solid rgb(197, 197, 197);
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
+  border-right: 1px solid rgb(197, 197, 197);
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .tbc-div {
-    border-left: 1px solid rgb(197, 197, 197);
-    width: 25%;
-    height: 100%;
-    text-align: center;
+  border-left: 1px solid rgb(197, 197, 197);
+  width: 25%;
+  height: 100%;
+  text-align: center;
 }
 
 .tbc-div-img {
-    width: 30%;
-    height: 45%;
-    margin: auto;
+  width: 30%;
+  height: 45%;
+  margin: auto;
 }
 
 .tbc-div-text {
-    line-height: 30%;
+  line-height: 30%;
 }
 
 .app-img-container {
-    border-bottom: 1px solid rgb(197, 197, 197);
-    width: 100%;
-    height: 300px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  width: 100%;
+  /* height: 300px; */
 
-    background-color: white;
+  background-color: white;
 }
 
 #aic-child {
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 #app-img-div {
-    width: 20%;
-    height: 80%;
-    margin: auto;
-    margin-top: 20px;
-
-
+  width: 20%;
+  height: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 #aic-text-div {
-    width: 70%;
-    line-height: 60%;
-    text-align: center;
-    padding-top: 3%;
+  width: 70%;
+  line-height: 60%;
+  text-align: center;
+  padding-top: 3%;
 }
-#aic-text-div>a{
-    text-decoration: none;
+#aic-text-div > a {
+  text-decoration: none;
 }
 
 #getApp {
-    border: none;
-    height: 24px;
-    margin-left: 0px;
-    color: white;
-    background-color: #189EA3;
+  border: none;
+  height: 24px;
+  margin-left: 0px;
+  color: white;
+  background-color: #189ea3;
 }
 
 #getApp:hover {
-    background-color: rgb(74, 75, 75);
+  background-color: rgb(74, 75, 75);
 }
-#playstore-app-link{
-    
-    width: 17%;
-    height: 13%;
-    margin: auto;
-    margin-top: 3%;
+#playstore-app-link {
+  width: 17%;
+  height: 13%;
+  margin: auto;
+  margin-top: 3%;
 }
 #helth-artical {
-    border-bottom: 1px solid rgb(197, 197, 197);
-    background-color: white;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
 }
 
 .ha-div {
-    border-left: 1px solid rgb(197, 197, 197);
-    width: 24%;
-    height: 100%;
-
+  border-left: 1px solid rgb(197, 197, 197);
+  width: 24%;
+  height: 100%;
 }
 
 #ha-heart-img {
-    background-color: #189ea3;
-    height: 100%;
+  background-color: #189ea3;
+  height: 100%;
 }
-#ha-img-logo{
-    width: 33%;
-    height: 50%;
-    margin: auto;
-    margin-top: 4%;
+#ha-img-logo {
+  width: 33%;
+  height: 50%;
+  margin: auto;
+  margin-top: 4%;
 }
 .ha-div-text {
-    border-left: 1px solid rgb(197, 197, 197);
-    width: 25%;
-    height: 130px;
-    padding: 1%;
+  border-left: 1px solid rgb(197, 197, 197);
+  width: 25%;
+  height: 130px;
+  padding: 1%;
 }
 
 .artical-view {
-    border: 1px solid #189ea3;
-    border-radius: 2px;
-    width: 27%;
-    height: 18%;
-    color: #189ea3;
+  border: 1px solid #189ea3;
+  border-radius: 2px;
+  width: 27%;
+  height: 18%;
+  color: #189ea3;
 }
 
-.artical-view>a {
-    text-decoration: none;
-
+.artical-view > a {
+  text-decoration: none;
 }
 
 .artical-view:hover {
-    border: 1px solid rgb(197, 197, 197);
-    color: white;
-    background-color: #189ea3;
+  border: 1px solid rgb(197, 197, 197);
+  color: white;
+  background-color: #189ea3;
 }
 
-.artical-view>a:hover {
-    color: white;
+.artical-view > a:hover {
+  color: white;
+}
+@media (max-width: 750px) {
+  .map-container {
+    flex-direction: column;
+  }
 }
