@@ -35,6 +35,10 @@ if(a.length < 16){
 
 }else{
 swal("Payment Succesful", "You will get your Delivery Date on your mobile Number");
+
+// var cartbag=[];
+// JSON.stringify(localStorage.setItem("cartBag",cartbag));
+// console.log(cartbag)
 }
 
 
