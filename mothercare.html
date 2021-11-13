@@ -436,16 +436,40 @@
             let lastbutton = document.createElement("button");
             lastbutton.setAttribute("class", "lastbutton");
             lastbutton.innerText = "Add To Cart";
-            lastbutton.addEventListener("click", function() {
+            lastbutton.addEventListener("click", function(event) {
                 let spanminus = document.createElement("span");
                 spanminus.setAttribute("class", "spanminus");
                 spanminus.innerText = "-";
+                spanminus.setAttribute("id", `cart-qty-${index}-${i}`);
+                spanminus.setAttribute("id", `cart-qty-minus-${index}-${i}`);
                 let spannumber = document.createElement("span");
                 spannumber.setAttribute("class", "spannumber");
-                spannumber.innerText = "1";
+                spannumber.innerText = arr[count] && arr[count].quantity ? arr[count].quantity : 1;
                 let spanplus = document.createElement("span");
                 spanplus.setAttribute("class", "spanplus");
                 spanplus.innerText = "+";
+                spanplus.setAttribute("id", `cart-qty-plus-${index}-${i}`);
+                lastbutton.innerHTML = "";
+                lastbutton.style.display = "flex";
+                lastbutton.style.gap = "10px";
+                lastbutton.style.alignItems = "center";
+                lastbutton.style.backgroundColor = "white";
+                if(event.target.id === `cart-qty-plus-${index}-${i}`) {
+                    let item = arr[index];
+                    item.quantity = (item.quantity) + 1;
+                    spannumber.innerText = item.quantity;
+                }
+
+                if (event.target.id === `cart-qty-minus-${index}-${i}`) {
+                    let item = arr[index];
+                    if (item.quantity <= 1) {
+                        item.quantity = 1
+                    } else {
+                        item.quantity = (item.quantity) - 1;
+                    }
+                    spannumber.innerText = item.quantity;
+                }
+                
                 lastbutton.append(spanminus, spannumber, spanplus);
             })
             childDiv.append(lastbutton);
@@ -455,10 +479,10 @@
 
     body.append(div);
     document.querySelector("img").addEventListener("click", function () {
-        window.location.href = "product.html";
+        window.location.href = "mothercare_product.html";
     })
     document.querySelector(".subtitle").addEventListener("click", function () {
-        window.location.href = "product.html";
+        window.location.href = "mothercare_product.html";
     })
 
 </script>
