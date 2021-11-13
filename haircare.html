@@ -1,0 +1,515 @@
+<html>
+    <head>
+
+        <title></title>
+
+        <style>
+
+            body {
+                background-color: rgb(235, 229, 229);
+            }
+
+            p {
+                margin-left: 3.2rem;
+                margin-top: 5rem;
+            }
+
+            span:hover {
+                color: teal;
+                cursor: pointer;
+            }
+
+            .div {
+                width: 100%;
+                height: 1800px;
+                display: flex;
+                flex-flow: row;
+                gap: 1.5rem;
+                justify-content: center;
+            }
+
+            .wrapper {
+                display: flex;
+                gap: 1.5rem;
+                flex-flow: column;
+            }
+
+            .child-div {
+                height: 260px;
+                width: 235px;
+                background-color: white;
+                display: flex;
+                flex-flow: column;
+            }
+
+            .child-div:hover {
+               box-shadow: 0 7px 17px 0 rgb(23 84 116 / 18%);
+            }
+
+            .button {
+                width: 55px;
+                height: 35px;
+                background-color: white;
+                border-radius: 4px;
+                border: 1px solid teal;
+                color: teal;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .img {
+                width: 110px;
+                height: 190px;
+                margin: auto;
+                cursor: pointer;
+            }
+
+            .subtitle {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            .subtitle:hover{
+                color: teal;
+                cursor: pointer;
+            }
+
+            .subtext {
+                width: 225px;
+                height: 35px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 12px;
+                color: gray;
+            }
+            .price {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                font-size: 13px;
+                
+            }
+            .lprice {
+                width: 90px;
+                height: 18px;
+                margin-left: 12px;
+                margin-top: 6px;
+                margin-bottom: 0px;
+                margin-bottom: 5px;
+                font-size: 11px;
+                color: gray;
+                text-decoration-line: line-through;
+            }
+
+            .lastbutton {
+                width: 90px;
+                height: 55px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+            .lastbutton:hover {
+                cursor: pointer;
+                background-color: teal;
+            }
+
+            .spanminus {
+                width: 25px;
+                /* height: 25px; */
+                border-radius: 50%;
+                background-color: rgb(2, 160, 160);;
+                gap: 2rem;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+                display: flex;
+            }
+
+            .spannumber {
+                width: 25px;
+                height: 23px;
+                border-radius: 50px;
+                color: rgb(2, 160, 160);
+                background-color: white;
+                gap: 2rem;
+                text-align: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            .spanplus {
+                width: 25px;
+                /* height: 25px; */
+                border-radius: 50%;
+                background-color: rgb(2, 160, 160);;
+                gap: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+                font-weight: bold;
+            }
+            
+            hr {
+                color: gray;
+                width: 1267px;
+            }
+
+            .firstbutton {
+                width: div45px;
+                height: 55firstbuttonpx;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+            .secondbutton {
+                width: 45px;
+                height: 55px;
+                background-color: rgb(2, 160, 160);
+                color: white;
+                border-radius: 5px;
+                margin-top: -40px;
+                margin-left: 110px;
+                margin-bottom: 5px;
+                border: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <p><b><span> Home</span> /<span> Categories</span></b> / Haircare </p>  
+        <hr>
+    </body>
+
+</html>
+
+
+<script> 
+    var arr = [
+        {
+            image_url: "https://mednear.com/uploads/medicine/6d2021dee1d7ce79ef17f699bf45d03d.png",
+            title: "SBL 116 HAIR CARE PACK (COMBO OF 3)",
+            subtitle: "SBL 116 HAIR CARE…",
+            subtext: "packet of 1 Kit",
+            price: "Rs.453.42",
+            lprice: "Rs.458.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "GLOZZ HAIR CONDITIONING CREAM",
+            subtitle: "GLOZZ HAIR CONDITIONING CRE...",
+            subtext: "tube of 100 ml Cream",
+            price: "Rs.222.75",
+            lprice: "Rs.225.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "KAZEGLOSS SHAMPOO",
+            subtitle: "KAZEGLOSS SHAMPOO",
+            subtext: "bottle of 100 ml Shampoo",
+            price: "Rs.246.51",
+            lprice: "Rs.249.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/d2e2493ca5fc6fe7980be77d9ae8bb6d.jpg",
+            title: "MNX-FORTE SOLUTION",
+            subtitle: "MNX-FORTE SOLUTION",
+            subtext: "bottle of 60 ml Solution",
+            price: "Rs.834.57",
+            lprice: "Rs.843.57",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "BIOKARE FORTE TABLET",
+            subtitle: "BIOKARE FORTE TABLET",
+            subtext: "strip of 10 tablets",
+            price: "Rs.82.17",
+            lprice: "Rs.83.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/0ae10bbe71f07f3b23cfc5546a7faad3.jpg",
+            title: "SBL FORMICA RUFA DILUTION 1000 CH",
+            subtitle: "BASIC AYURVEDA NEEM LEAF…",
+            subtext: "bottle of 500 ml Juice",
+            price: "Rs.168.30",
+            lprice: "Rs.170.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "TRESSOTIN 10MG TABLET",
+            subtitle: "TRESSOTIN 10MG TABLET",
+            subtext: "strip of 10 tablets",
+            price: "Rs.76.72",
+            lprice: "Rs.76.50",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/d5de4e32979103f9503224048b301220.jpg",
+            title: "KLINIQUE PROTEIN SHAMPOO",
+            subtitle: "KLINIQUE PROTEIN SHAMPOO",
+            subtext: "bottle of 100 ml Shampoo",
+            price: "Rs.242.55",
+            lprice: "Rs.245.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "KAZEGLOSS HAIR OIL",
+            subtitle: "KAZEGLOSS HAIR OIL",
+            subtext: "bottle of 100 ml Oil",
+            price: "Rs.167.31",
+            lprice: "Rs.169.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/e4e45d371f5a2d7e192ecf44bfc11892.jpg",
+            title: "HAIR KING 50ML OIL",
+            subtitle: "HAIR KING 50ML OIL",
+            subtext: "bottle of 50 ml Oil",
+            price: "Rs.198.00",
+            lprice: "Rs.200.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/b879005d3d687d3168b0ae18166bcee6.jpg",
+            title: "SEBAMED CHILDREN'S SHAMPO",
+            subtitle: "SEBAMED CHILDREN'S SHAM…",
+            subtext: "bottle of 150 ml Shampoo",
+            price: "Rs.422.73",
+            lprice: "Rs.427.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/304f6e64a8256d60021fb96e419bd16b.jpg",
+            title: "TARCILIC SOLUTION",
+            subtitle: "TARCILIC SOLUTION",
+            subtext: "bottle of 60 ml Solution",
+            price: "Rs.44.55",
+            lprice: "Rs.45.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "DUCRAY NUTRICERAT INTENSE NUTRITION HAIR MASK CONDITIONER",
+            subtitle: "DUCRAY NUTRICERAT INTENSE",
+            subtext: "jar of 150 ml Hair Mask",
+            price: "Rs.2,318.00",
+            lprice: "Rs.2440.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/46657291dffa3547244e0a977473b56b.jpg",
+            title: "IMXIA XL SERUM",
+            subtitle: "IMXIA XL SERUM",
+            subtext: "bottle of 60 ml Serum",
+            price: "Rs.1,187.50",
+            lprice: "Rs.1250.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/0b101184736819dd1fbc462c569d5d4a.jpg",
+            title: "JUNGLE FORMULA SHAMPOO",
+            subtitle: "JUNGLE FORMULA SHAMPOO",
+            subtext: "bottle of 25 ml Shampoo",
+            price: "Rs.74.25",
+            lprice: "Rs.75.00",
+            quantity: 1,
+        },
+
+         {
+            image_url: "https://mednear.com/uploads/medicine/f537f6b7e5a550db0c7da53551a3ab91.jpg",
+            title: "ANDROANAGEN SOLUTION",
+            subtitle: "ANDROANAGEN SOLUTION",
+            subtext: "bottle of 100 ml Solution",
+            price: "Rs.920.70",
+            lprice: "Rs.930.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/icons/otc.png",
+            title: "MILDY SHAMPOO",
+            subtitle: "MILDY SHAMPOO",
+            subtext: "tube of 100 ml Shampoo",
+            price: "Rs.185.25",
+            lprice: "Rs.195.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/a35c7c5d468e69cad20c18b9ce328bf6.jpg",
+            title: "Q-SERA HAIR SERUM",
+            subtitle: "Q-SERA HAIR SERUM",
+            subtext: "bottle of 60 ml Serum",
+            price: "Rs.1,282.50",
+            lprice: "Rs.1350.00",
+            quantity: 1,
+        },
+
+         {
+            image_url: "https://mednear.com/uploads/medicine/0e6989235892a53d3d68088ce133a068.jpg",
+            title: "KLOSH-F TABLET",
+            subtitle: "KLOSH-F TABLET",
+            subtext: "strip of 15 tablets",
+            price: "Rs.481.14",
+            lprice: "Rs.486.00",
+            quantity: 1,
+        },
+
+        {
+            image_url: "https://mednear.com/uploads/medicine/ad18718eb0ef9c5a44f20b1130d1d187.jpg",
+            title: "ROOTZ-M10 SOLUTION",
+            subtitle: "ROOTZ-M10 SOLUTION",
+            subtext: "bottle of 60 ml Solution",
+            price: "Rs.579.15",
+            lprice: "Rs.585.00",
+            quantity: 1,
+        },
+    ]
+    let count = 0;
+    let body = document.querySelector("body");
+    let div = document.createElement("div");
+    div.setAttribute("class", "div");
+    for(let i = 0; i < 5; i++) {
+        const wrapper = document.createElement("div");
+        wrapper.setAttribute("class", "wrapper");
+        for(let index = 0; index < 4; index++) {
+            const childDiv = document.createElement("div");
+            childDiv.setAttribute("class", "child-div");
+            let button = document.createElement("button");
+            button.setAttribute("class", "button");
+            button.innerText = "1% Off";
+
+            
+            childDiv.appendChild(button);
+            wrapper.appendChild(childDiv);
+
+            let img = document.createElement("img");
+            img.setAttribute("class", "img");
+            img.setAttribute("src", arr[count].image_url);
+            img.setAttribute("title", arr[count].title);
+            childDiv.append(img);
+
+            let subtitle = document.createElement("p");
+            subtitle.setAttribute("class", "subtitle");
+            subtitle.innerText = arr[count].subtitle;
+            childDiv.append(subtitle);
+
+            let subtext = document.createElement("p");
+            subtext.setAttribute("class", "subtext");
+            subtext.innerText = arr[count].subtext;
+            childDiv.append(subtext);
+
+            let price = document.createElement("p");
+            price.setAttribute("class", "price");
+            price.innerText = arr[count].price;
+            childDiv.append(price);
+
+            let lprice = document.createElement("p");
+            lprice.setAttribute("class", "lprice");
+            lprice.innerText = arr[count].lprice;
+            childDiv.append(lprice);
+            childDiv.setAttribute("id", `child-div-${index}-${i}`);
+            count++;
+
+
+            let lastbutton = document.createElement("button");
+            lastbutton.setAttribute("class", "lastbutton");
+            lastbutton.innerText = "Add To Cart";
+            lastbutton.addEventListener("click", function(event) {
+                let spanminus = document.createElement("span");
+                spanminus.setAttribute("class", "spanminus");
+                spanminus.innerText = "-";
+                spanminus.setAttribute("id", `cart-qty-${index}-${i}`);
+                spanminus.setAttribute("id", `cart-qty-minus-${index}-${i}`);
+                let spannumber = document.createElement("span");
+                spannumber.setAttribute("class", "spannumber");
+                spannumber.innerText = arr[count] && arr[count].quantity ? arr[count].quantity : 1;
+                let spanplus = document.createElement("span");
+                spanplus.setAttribute("class", "spanplus");
+                spanplus.innerText = "+";
+                spanplus.setAttribute("id", `cart-qty-plus-${index}-${i}`);
+                lastbutton.innerHTML = "";
+                lastbutton.style.display = "flex";
+                lastbutton.style.gap = "10px";
+                lastbutton.style.alignItems = "center";
+                lastbutton.style.backgroundColor = "white";
+                if(event.target.id === `cart-qty-plus-${index}-${i}`) {
+                    let item = arr[index];
+                    item.quantity = (item.quantity) + 1;
+                    spannumber.innerText = item.quantity;
+                }
+
+                if (event.target.id === `cart-qty-minus-${index}-${i}`) {
+                    let item = arr[index];
+                    if (item.quantity <= 1) {
+                        item.quantity = 1
+                    } else {
+                        item.quantity = (item.quantity) - 1;
+                    }
+                    spannumber.innerText = item.quantity;
+                }
+                
+                lastbutton.append(spanminus, spannumber, spanplus);
+            })
+            childDiv.append(lastbutton);
+        }
+        div.appendChild(wrapper);
+    }
+
+    body.append(div);
+    document.querySelector("img").addEventListener("click", function () {
+        window.location.href = "haircare_product.html";
+    })
+    document.querySelector(".subtitle").addEventListener("click", function () {
+        window.location.href = "haircare_product.html";
+    })
+
+    // document.querySelector(".spanminus").addEventListener("click", function() {
+    //     let item = arr[count];
+    //     console.log(item);
+    // })
+
+</script>
