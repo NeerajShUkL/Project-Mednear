@@ -2,7 +2,7 @@
     <head>
 
         <title></title>
-
+        
         <style>
 
             body {
@@ -36,7 +36,7 @@
 
             .child-div {
                 height: 260px;
-                width: 235px;
+                width: 200px;
                 background-color: white;
                 display: flex;
                 flex-flow: column;
@@ -47,8 +47,8 @@
             }
 
             .button {
-                width: 55px;
-                height: 35px;
+                width: 35px;
+                height: 25px;
                 background-color: white;
                 border-radius: 4px;
                 border: 1px solid teal;
@@ -199,6 +199,7 @@
     </head>
 
     <body>
+        
         <p><b><span> Home</span> /<span> Categories</span></b> / Haircare </p>  
         <hr>
     </body>
@@ -412,10 +413,10 @@
     let body = document.querySelector("body");
     let div = document.createElement("div");
     div.setAttribute("class", "div");
-    for(let i = 0; i < 5; i++) {
+    for(let i = 0; i < 4; i++) {
         const wrapper = document.createElement("div");
         wrapper.setAttribute("class", "wrapper");
-        for(let index = 0; index < 4; index++) {
+        for(let index = 0; index < 3; index++) {
             const childDiv = document.createElement("div");
             childDiv.setAttribute("class", "child-div");
             let button = document.createElement("button");
