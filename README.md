@@ -7,4 +7,4 @@ This is a clone of <a href="https://www.mednear.com/">mednear </a> which is a me
 For the frontend, we have used HTML, CSS, JS. And Localstorage is been used on backend.
 
 ## Deployment
-![Mednear-clone] (https://ankitmung.github.io/Project-Mednear/home.html)
+ (https://ankitmung.github.io/Project-Mednear/home.html)
